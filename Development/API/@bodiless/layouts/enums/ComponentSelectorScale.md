@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[bodiless-layouts/src/ComponentSelector/types.tsx:19](https://github.com/konst8/Bodiless-JS-light/blob/0b682b9e/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L19)
+[bodiless-layouts/src/ComponentSelector/types.tsx:19](https://github.com/konst8/Bodiless-JS-light/blob/ae35e5c0/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L19)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[bodiless-layouts/src/ComponentSelector/types.tsx:20](https://github.com/konst8/Bodiless-JS-light/blob/0b682b9e/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L20)
+[bodiless-layouts/src/ComponentSelector/types.tsx:20](https://github.com/konst8/Bodiless-JS-light/blob/ae35e5c0/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L20)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[bodiless-layouts/src/ComponentSelector/types.tsx:21](https://github.com/konst8/Bodiless-JS-light/blob/0b682b9e/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L21)
+[bodiless-layouts/src/ComponentSelector/types.tsx:21](https://github.com/konst8/Bodiless-JS-light/blob/ae35e5c0/packages/bodiless-layouts/src/ComponentSelector/types.tsx#L21)
