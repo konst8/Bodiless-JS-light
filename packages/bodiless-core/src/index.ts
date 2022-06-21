@@ -65,12 +65,6 @@ import {
   useActivateOnEffectActivator,
   withReactivateOnRemount,
 } from './ActivateContext';
-import {
-  NotificationProvider,
-  useNotifications,
-  useNotify,
-} from './NotificationProvider';
-import withNotificationButton from './withNotificationButton';
 import withChild, { withAppendChild, withPrependChild } from './withChild';
 import withParent from './withParent';
 import asBodilessComponent, { withActivatorWrapper } from './asBodilessComponent/asBodilessComponent.bl-edit';
@@ -80,7 +74,6 @@ import type { BodilessOptions, AsBodiless } from './Types/AsBodilessTypes';
 import { useMenuOptionUI } from './components/ContextMenuContext';
 import ContextSubMenu from './ContextMenu/ContextSubMenu';
 import withSwitcherButton from './withSwitcherButton';
-import OnNodeErrorNotification from './OnNodeErrorNotification';
 import {
   getFromSessionStorage,
   saveToSessionStorage,
@@ -154,16 +147,11 @@ export {
   ifToggledOn,
   withFlowToggle,
   useEditToggle,
-  useNotifications,
-  useNotify,
   useLocalStorage,
   useClickOutside,
   withExtendHandler,
   useExtendHandler,
-  NotificationProvider,
-  withNotificationButton,
   withSwitcherButton,
-  OnNodeErrorNotification,
   getFromSessionStorage,
   saveToSessionStorage,
 };

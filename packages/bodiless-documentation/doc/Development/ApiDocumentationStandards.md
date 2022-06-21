@@ -168,7 +168,6 @@ module.exports = {``
 *package.json*
 ```json
 "scripts": {
-  "build:api-doc": "typedoc --options ./typedoc.js --out doc/api src",
   ...
 }
 ```

@@ -7,9 +7,10 @@ Currently in development.
 Roadmap:
 1. Get rid of:
 - tailwind (instead of classes, add clear ids for page elements)
-- docs
+- docs, docs-api
 - lerna
 - anything hosting related (e.g. p.sh configs, jenkins files etc.)
+- anything that is mostly jnj-specific like janrain
 - example sites, keep just one
 - unnecessary scripts and utilities
 

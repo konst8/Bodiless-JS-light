@@ -214,10 +214,9 @@ This should include, at a minimum, the following keys:
 - `scripts`: Usually the following should suffice:
   ```json
     "build": "run-p build:lib build:api-doc",
-    "build:api-doc": "typedoc --out doc/api src",
     "build:lib": "tsc -p ./tsconfig.json",
     "build:watch": "npm run build:lib -- --watch",
-    "clean": "rimraf \"lib/*\" && rimraf tsconfig.tsbuildinfo && rimraf \"doc/api\"",
+    "clean": "rimraf \"lib/*\" && rimraf tsconfig.tsbuildinfo",
   ```
   Do not include lint or test scripts, as these are generally defined at monorepo root.
 - `dependencies`, `peerDependencies`: List only packages which are specifically required.

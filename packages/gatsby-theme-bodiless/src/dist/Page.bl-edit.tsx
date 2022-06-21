@@ -14,10 +14,7 @@
 
 import React, { FC } from 'react';
 import {
-  NotificationProvider,
-  withNotificationButton,
   withSwitcherButton,
-  OnNodeErrorNotification,
   useGitButtons,
   GitContextProvider,
 } from '@bodiless/core';
@@ -46,7 +43,7 @@ const defaultUI: FinalUI = {
 
 const getUI = (ui: UI = {}): FinalUI => ({ ...defaultUI, ...ui });
 
-const NotificationButton = withNotificationButton(Fragment);
+// const NotificationButton = withNotificationButton(Fragment);
 const SwitcherButton = withSwitcherButton(Fragment);
 const NewPageButton = withNewPageButton(Fragment);
 const DeletePageButton = withDeletePageButton(Fragment);
@@ -79,23 +76,19 @@ const Page: FC<PageProps> = observer(({ children, ui, ...rest }) => {
       <ShowDesignKeys>
         <PageDataProvider pageData={pageData}>
           <GitContextProvider gitInfo={gitInfo}>
-            <NotificationProvider>
-              <SwitcherButton />
-              <NotificationButton />
-              <Editor>
-                <OnNodeErrorNotification />
-                <NewPageButton />
-                <MovePageButton />
-                <DisablePageButton />
-                <ClonePageButton />
-                <GitButtons />
-                <Wrapper clickable>
-                  {children}
-                </Wrapper>
-                <DeletePageButton />
-                <RedirectAliasButton />
-              </Editor>
-            </NotificationProvider>
+            <SwitcherButton />
+            <Editor>
+              <NewPageButton />
+              <MovePageButton />
+              <DisablePageButton />
+              <ClonePageButton />
+              <GitButtons />
+              <Wrapper clickable>
+                {children}
+              </Wrapper>
+              <DeletePageButton />
+              <RedirectAliasButton />
+            </Editor>
           </GitContextProvider>
         </PageDataProvider>
       </ShowDesignKeys>

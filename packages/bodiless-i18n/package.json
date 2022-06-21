@@ -19,18 +19,16 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build:lib && npm run build:api-doc",
+    "build": "npm run build:lib",
     "build:lib": "tsc -p ./tsconfig.json",
     "build:watch": "npm run build:lib -- --watch",
-    "build:api-doc": "typedoc --out doc/api src",
-    "clean": "rimraf \"lib/*\" && rimraf tsconfig.tsbuildinfo && rimraf \"doc/api\""
+    "clean": "rimraf \"lib/*\" && rimraf tsconfig.tsbuildinfo"
   },
   "dependencies": {
     "@bodiless/cli": "^1.0.0-rc.9",
     "@bodiless/core": "^1.0.0-rc.9",
     "@bodiless/fclasses": "^1.0.0-rc.9",
     "lodash": "^4.17.19",
-    "typedoc": "^0.22.6",
     "typescript": "^4.0.0"
   },
   "peerDependencies": {

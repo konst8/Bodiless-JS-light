@@ -22,7 +22,6 @@ import { useRegisterMenuOptions } from '../PageContextProvider';
 import { contextMenuForm } from '../contextMenuForm';
 import { getUI } from '../components';
 import { useEditContext, useGetter } from '../hooks';
-import { useNotify } from '../NotificationProvider';
 import { BodilessBackendClient } from '../BackendClient';
 import CommitsList from './CommitsList';
 import RemoteChanges from './RemoteChanges';
@@ -175,8 +174,6 @@ export type ChangeNotifier = () => Promise<void>;
 const useGitButtons = ({ client = defaultClient } = {}) => {
   const [notifications, setNotifications] = useState([] as any);
   const context = useEditContext();
-
-  useNotify(notifications);
 
   // Quickly [double-]check for changes in the upstream and main branches
   // and send notifications to the "Alerts" section.
