@@ -6,7 +6,7 @@ Currently in development.
 
 Roadmap:
 1. Get rid of:
-- tailwind
+- tailwind (instead of classes, add clear ids for page elements)
 - docs
 - lerna
 - anything hosting related (e.g. p.sh configs, jenkins files etc.)
