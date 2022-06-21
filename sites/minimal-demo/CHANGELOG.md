@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.0-rc.8 (2022-06-21)
+
+
+### Bug Fixes
+
+* **docs:** fixing failed gh-page publishing ([c61e13d](https://github.com/johnsonandjohnson/bodiless-js/commit/c61e13d333de8217bcaf2bc46eb661356f8c41bb))
+
+
+
+
+
 # [1.0.0-rc.7](https://github.com/johnsonandjohnson/bodiless-js/compare/v1.0.0-rc.6...v1.0.0-rc.7) (2022-06-17)
 
 **Note:** Version bump only for package @sites/minimal-demo
