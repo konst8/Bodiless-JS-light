@@ -1,9 +1,9 @@
 {
-  "name": "bodiless-js",
+  "name": "bodiless-js-light",
   "description": "Bodiless-JS",
-  "version": "1.0.0-rc.1",
+  "version": "0.0.0",
   "keywords": [
-    "gatsby"
+    "gatsby", "bodiless-js"
   ],
   "license": "Apache-2.0",
   "scripts": {
@@ -135,7 +135,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnsonandjohnson/bodiless-js.git"
+    "url": "https://github.com/konst8/bodiless-js-light.git"
   },
   "engines": {
     "node": ">=16.9"
