@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.0-rc.8 (2022-06-21)
+
+
+### Bug Fixes
+
+* Add missing docs to packages. ([#1556](https://github.com/johnsonandjohnson/bodiless-js/issues/1556)) ([2a4bc3d](https://github.com/johnsonandjohnson/bodiless-js/commit/2a4bc3db9a597eb4b811044b3acde4a44f4c98e8))
+* **cli:** Build bodiless cli as commonjs ([#1549](https://github.com/johnsonandjohnson/bodiless-js/issues/1549)) ([916f9df](https://github.com/johnsonandjohnson/bodiless-js/commit/916f9df79bda210adfe28cd0ce9fc9294d75418c))
+* **cli:** npm ENOENT on spawning processes on windows ([#498](https://github.com/johnsonandjohnson/bodiless-js/issues/498)) ([08ccebe](https://github.com/johnsonandjohnson/bodiless-js/commit/08ccebe095cd7f896d894e6a89ee8a5ec1fdf1dc))
+* **docs:** fixing failed gh-page publishing ([c61e13d](https://github.com/johnsonandjohnson/bodiless-js/commit/c61e13d333de8217bcaf2bc46eb661356f8c41bb))
+
+
+### Features
+
+* **cli:** Bodiless new ([#1568](https://github.com/johnsonandjohnson/bodiless-js/issues/1568)) ([3bc0e2c](https://github.com/johnsonandjohnson/bodiless-js/commit/3bc0e2c8e06fe78751c0712d7e1d3cfb8d1fb04d)), closes [#1520](https://github.com/johnsonandjohnson/bodiless-js/issues/1520)
+* **cli:** Create CLI to install local packages ([#188](https://github.com/johnsonandjohnson/bodiless-js/issues/188)) ([4d78c7a](https://github.com/johnsonandjohnson/bodiless-js/commit/4d78c7a86aab1bc1286d14f4da50dcfb923ddde9)), closes [#187](https://github.com/johnsonandjohnson/bodiless-js/issues/187)
+* Fully disable save by env var. ([#1600](https://github.com/johnsonandjohnson/bodiless-js/issues/1600)) ([b19cd73](https://github.com/johnsonandjohnson/bodiless-js/commit/b19cd73422bcbb5e82125c4936b7aeb0c7c9cc7e)), closes [#1479](https://github.com/johnsonandjohnson/bodiless-js/issues/1479) [#1522](https://github.com/johnsonandjohnson/bodiless-js/issues/1522) [#1479](https://github.com/johnsonandjohnson/bodiless-js/issues/1479)
+
+
+
+
+
 # [1.0.0-rc.7](https://github.com/johnsonandjohnson/bodiless-js/compare/v1.0.0-rc.6...v1.0.0-rc.7) (2022-06-17)
 
 **Note:** Version bump only for package @bodiless/cli
