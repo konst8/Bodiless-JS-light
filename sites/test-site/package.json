@@ -58,7 +58,6 @@
     "@bodiless/youtube": "^1.0.0-rc.9",
     "autoprefixer": "^10.4.2",
     "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
     "express": "^4.17.1",
     "find-up": "^4.1.0",
     "gatsby": "^4.11.2",
