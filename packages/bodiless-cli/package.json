@@ -17,8 +17,6 @@
   "files": [
     "/bin",
     "/lib",
-    "/bodiless.docs.json",
-    "/doc",
     "getDocs.js"
   ],
   "repository": {

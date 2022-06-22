@@ -8,8 +8,7 @@
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "files": [
-    "/lib",
-    "tailwind.config.js"
+    "/lib"
   ],
   "repository": {
     "type": "git",

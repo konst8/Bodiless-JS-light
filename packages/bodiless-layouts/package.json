@@ -13,11 +13,7 @@
     "test": "__tests__"
   },
   "files": [
-    "/lib",
-    "/doc",
-    "/bodiless.docs.json",
-    "/getDocs.js",
-    "tailwind.config.js"
+    "/lib"
   ],
   "repository": {
     "type": "git",

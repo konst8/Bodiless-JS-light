@@ -125,13 +125,6 @@ if (process.env.ROBOTSTXT_ENABLED !== '0') {
 }
 
 /**
- * css compilation and purging.
-*/
-const getbuildCSSPlugins = require('./build-css');
-
-plugins.push(...getbuildCSSPlugins());
-
-/**
  * default content plugins
  */
 const discoverDefaultContent = (depth = 1) => {

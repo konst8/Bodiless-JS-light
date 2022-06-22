@@ -11,8 +11,6 @@
     "/lib",
     "/bin",
     "/patches",
-    "/doc",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "repository": {

@@ -8,8 +8,6 @@
   "typings": "lib/index.d.ts",
   "files": [
     "/lib",
-    "/doc",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "repository": {

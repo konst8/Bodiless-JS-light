@@ -12,9 +12,7 @@
     "test": "__tests__"
   },
   "files": [
-    "/doc",
     "/lib",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "repository": {

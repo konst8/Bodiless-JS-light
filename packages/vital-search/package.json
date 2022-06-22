@@ -12,8 +12,6 @@
   },
   "files": [
     "/lib",
-    "/bodiless.docs.json",
-    "/tailwind.config.js",
     "/doc"
   ],
   "repository": {

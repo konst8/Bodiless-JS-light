@@ -13,11 +13,7 @@
     "test": "__tests__"
   },
   "files": [
-    "/lib",
-    "/doc",
-    "/bodiless.docs.json",
-    "/getDocs.js",
-    "src/tailwindcss/resolveConfig.ts"
+    "/lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -40,8 +36,5 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/tailwindcss": "^3.0.10"
   }
 }

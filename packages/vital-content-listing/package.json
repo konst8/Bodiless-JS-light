@@ -8,11 +8,7 @@
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "files": [
-    "/lib",
-    "/doc",
-    "/bodiless.docs.json",
-    "/getDocs.js",
-    "/tailwind.config.js"
+    "/lib"
   ],
   "repository": {
     "type": "git",

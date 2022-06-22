@@ -14,8 +14,6 @@
   },
   "files": [
     "/lib",
-    "/doc",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "publishConfig": {

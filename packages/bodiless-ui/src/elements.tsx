@@ -32,7 +32,7 @@ import {
 } from '@bodiless/fclasses';
 import { ButtonVariantProps, withChild } from '@bodiless/core';
 
-import './bodiless.index.css';
+// import './bodiless.index.css';
 import 'rc-tooltip/assets/bootstrap.css';
 
 export const Title = stylable<HTMLProps<HTMLHeadingElement>>('h3');

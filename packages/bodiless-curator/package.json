@@ -8,9 +8,6 @@
   "typings": "lib/index.d.ts",
   "files": [
     "/lib",
-    "tailwind.config.js",
-    "/doc",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "repository": {

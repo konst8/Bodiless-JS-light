@@ -20,7 +20,6 @@
   "files": [
     "/lib",
     "/resources",
-    "/bodiless.docs.json",
     "/getDocs.js"
   ],
   "repository": {

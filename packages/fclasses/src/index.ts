@@ -23,4 +23,3 @@ export * from './flowHoc';
 export * from './types';
 export * from './tokenSpec';
 export * from './withShowDesignKeys';
-export * from './tailwindcss';

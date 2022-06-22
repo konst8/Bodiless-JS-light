@@ -8,11 +8,7 @@
   "sideEffects": false,
   "typings": "lib/index.d.ts",
   "files": [
-    "/lib",
-    "/bodiless.docs.json",
-    "/getDocs.js",
-    "/doc",
-    "tailwind.config.js"
+    "/lib"
   ],
   "repository": {
     "type": "git",
@@ -42,7 +38,6 @@
     "@types/react-tag-autocomplete": "^6.0.0",
     "lodash": "^4.17.19",
     "react-tag-autocomplete": "^6.0.0",
-    "tailwindcss-aspect-ratio": "^3.0.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

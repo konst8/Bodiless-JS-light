@@ -21,9 +21,6 @@ import {
   withAllTitlesFromTerms, ifComponentSelector, withTailwindWidthConstraints,
 } from '@bodiless/layouts';
 import pick from 'lodash/pick';
-// @ts-ignore
-import resolvedConfigs from
-  '@bodiless/fclasses/src/tailwindcss/resolveConfig';
 
 // @ts-ignore
 import {
@@ -102,7 +99,7 @@ export const basicDesign = {
 // is usually done at the site level, using the sites tailwind config.
 export const withWidthConstraints = flow(
   withTailwindWidthConstraints,
-)(resolvedConfigs);
+)();
 
 const TestCase = startWith(() => <div>This is a component with no metadata</div>);
 

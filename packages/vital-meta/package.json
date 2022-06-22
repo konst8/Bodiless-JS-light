@@ -9,8 +9,6 @@
   "typings": "lib/index.d.ts",
   "files": [
     "/lib",
-    "/getDocs.js",
-    "/bodiless.docs.json",
     "/doc"
   ],
   "repository": {

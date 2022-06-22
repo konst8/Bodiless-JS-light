@@ -13,9 +13,6 @@
  */
 import { flowHoc, addProps } from '@bodiless/fclasses';
 import { withNodeKey } from '@bodiless/core';
-// @ts-ignore Could not find a declaration file
-import resolvedConfigs from
-  '@bodiless/fclasses/src/tailwindcss/resolveConfig';
 import { getSnapFrom, withTailwindClasses } from '@bodiless/layouts';
 import { FlowContainer } from '@bodiless/layouts-ui';
 import withProductVariations from './withProductVariations';
@@ -23,9 +20,7 @@ import { asFilterableProductContainer } from '../ProductCard/token';
 import { asFlowContainerWithMargins, asFlowContainerFullWidth } from '../FlowContainer/token';
 // @ts-ignore Could not find a declaration file
 
-const snapData = getSnapFrom(
-  withTailwindClasses(resolvedConfigs)('w-1/3'),
-);
+const snapData = getSnapFrom({});
 
 const withProductStrictSnapSize = addProps({ snapData });
 
