@@ -18,7 +18,9 @@ import { Page } from '@bodiless/gatsby-theme-bodiless';
 import { withPageDimensionsContext, BreakpointsType } from '@bodiless/components';
 import Helmet from 'react-helmet';
 
-const getTailwindBreakpoints = (): BreakpointsType => ({});
+const getTailwindBreakpoints = (): BreakpointsType => ({
+  lg: 960,
+});
 
 const breakpoints: BreakpointsType = getTailwindBreakpoints();
 
