@@ -14,7 +14,7 @@
 
 import { addClasses, withDesign, addProps } from '@bodiless/fclasses';
 import {
-  withDirection, DIRECTIONS, getSnapFrom, withTailwindClasses, FlowContainerProps,
+  withDirection, DIRECTIONS, FlowContainerProps,
 } from '@bodiless/layouts';
 
 const asFlowContainerWithMargins = withDesign({
