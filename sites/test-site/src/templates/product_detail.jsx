@@ -16,7 +16,6 @@ import React from 'react';
 import { flow } from 'lodash';
 import { graphql } from 'gatsby';
 import { Page } from '@bodiless/gatsby-theme-bodiless';
-import { BVRatingsSummary, BVReviews } from '@bodiless/bv';
 import { withNode } from '@bodiless/core';
 import {
   addProps,
@@ -85,10 +84,8 @@ const ProductStorAcc = asProductAccordion('Storage')(AccordionClean);
 const ProductWarnAcc = asProductAccordion('Warnings')(AccordionClean);
 
 const asTestableRatingsSummary = addProps({ 'data-product-element': 'ratings-summary' });
-const ProductRatingsSummary = asTestableRatingsSummary(BVRatingsSummary);
 
 const asTestableProductReviews = addProps({ 'data-product-element': 'reviews' });
-const ProductReviews = asTestableProductReviews(BVReviews);
 
 const asTestableFlowContainer = withDesign({
   Wrapper: addProps({ 'data-product-element': 'flow-container' }),
@@ -107,9 +104,6 @@ const main = props => (
         </div>
       </SectionMargin>
       <SectionMargin>
-        <ProductRatingsSummary />
-      </SectionMargin>
-      <SectionMargin>
         <div className="flex flex-wrap">
           <ProductDetailImageWrapper>
             <ProductImage />
@@ -125,9 +119,6 @@ const main = props => (
             <ProductWarnAcc nodeKey="accordion-8" />
           </ProductDetailAccWrapper>
         </div>
-      </SectionMargin>
-      <SectionMargin>
-        <ProductReviews />
       </SectionMargin>
       <SectionNegXMargin>
         <ProductFlowContainer

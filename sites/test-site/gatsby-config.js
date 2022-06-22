@@ -5,7 +5,6 @@ const {
   getSampleDefaultContentConfig,
 } = require('@bodiless/gatsby-theme-bodiless/cjs/dist/DefaultContent');
 const { getDisabledPages } = require('@bodiless/components/node-api');
-const getSSIEntities = require('@bodiless/gatsby-plugin-ssi/read-ssi-entities');
 const {
   getConfig: getSiteDefaultContentConfig,
 } = require('./src/components/Contentful');
@@ -70,12 +69,6 @@ const plugins = [
         exclude: false,
       }
     },
-  },
-  {
-    resolve: '@bodiless/gatsby-plugin-ssi',
-    options: {
-      ssiEntities: getSSIEntities('ssi/ssi_conf.json'),
-    }
   },
   {
     resolve: 'gatsby-plugin-canonical-urls',

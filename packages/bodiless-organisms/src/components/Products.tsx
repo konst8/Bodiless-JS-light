@@ -31,7 +31,6 @@ import {
 } from '@bodiless/components';
 import { asBodilessImage } from '@bodiless/components-ui';
 import { withNode } from '@bodiless/core';
-import { BVInlineRatings } from '@bodiless/bv';
 
 export type ProductComponents = {
   Wrapper: ComponentType<StylableProps>,
@@ -69,8 +68,6 @@ const ProductBase: FC<Props> = ({ components }) => {
     ContentWrapper,
     TitleLink,
     Title,
-    BvReview,
-    BvReviewLink,
     Body,
   } = components;
 
@@ -85,9 +82,6 @@ const ProductBase: FC<Props> = ({ components }) => {
         <TitleLink>
           <Title />
         </TitleLink>
-        <BvReviewLink>
-          <BvReview />
-        </BvReviewLink>
         <Body />
       </ContentWrapper>
     </Wrapper>
@@ -104,8 +98,6 @@ const asEditableProduct = withDesign<ProductComponents>({
   ImageLink: asBodilessLink('cta'),
   TitleLink: asBodilessLink('cta'),
   Title: asEditable('title', 'Product Title Text'),
-  BvReviewLink: asBodilessLink('cta'),
-  BvReview: () => BVInlineRatings,
   Body: asEditable('body', 'Product Body Text'),
 });
 

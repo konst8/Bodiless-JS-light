@@ -17,7 +17,6 @@ import {
   withDesign, startWith, flowHoc, A
 } from '@bodiless/fclasses';
 import { ProductClean } from '@bodiless/organisms';
-import { BVInlineRatings } from '@bodiless/bv';
 import { withEditorBasic, withEditorSimple } from '../Editors';
 import {
   asEditableLink,
@@ -41,7 +40,6 @@ export const asProductCard = flowHoc(
       asEditableLink('cta'),
       startWith(A),
     ),
-    BvReview: () => BVInlineRatings,
     Body: withEditorBasic('body', 'Product Body Text'),
   }),
 );

@@ -22,7 +22,6 @@ import {
 } from '@bodiless/fclasses';
 import { withNodeKey } from '@bodiless/core';
 import ResponsiveMenu, { BurgerMenuToggler } from '../Menu';
-import { ResponsiveSearchBox } from '../Search';
 import Logo from './logo';
 
 type HeaderComponents = {
@@ -30,9 +29,7 @@ type HeaderComponents = {
   Container: ComponentType<any>,
   MenuContainer: ComponentType<any>,
   MenuToggler: ComponentType<any>,
-  SearchContainer: ComponentType<any>,
   Menu: ComponentType<any>,
-  Search: ComponentType<any>,
   SiteLogoReturn: ComponentType<any>,
 };
 
@@ -43,9 +40,7 @@ const headerComponents:HeaderComponents = {
   Container: Div,
   MenuContainer: Div,
   MenuToggler: BurgerMenuToggler,
-  SearchContainer: Div,
   Menu: ResponsiveMenu,
-  Search: ResponsiveSearchBox,
   SiteLogoReturn: Logo,
 };
 
@@ -55,9 +50,7 @@ const HeaderClean: FC<Props> = ({ components }) => {
     Container,
     MenuContainer,
     MenuToggler,
-    SearchContainer,
     Menu,
-    Search,
     SiteLogoReturn,
   } = components;
 
@@ -65,9 +58,6 @@ const HeaderClean: FC<Props> = ({ components }) => {
     <Wrapper>
       <Container>
         <SiteLogoReturn />
-        <SearchContainer>
-          <Search placeholder="Search" />
-        </SearchContainer>
         <MenuContainer>
           <MenuToggler />
           <Menu />

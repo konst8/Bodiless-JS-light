@@ -1,3 +1,0 @@
-#!/usr/bin/env node
-
-require('@bodiless/search/lib/scripts/bodiless-search-index');

@@ -18,7 +18,6 @@ import {
   HOC,
 } from '@bodiless/fclasses';
 import { useNode, withNodeKey } from '@bodiless/core';
-import { withSearchResult } from '@bodiless/search';
 import { withBurgerMenuProvider, withBreadcrumbStore } from '@bodiless/navigation';
 import { withOidcProvider } from '@bodiless/oidc';
 import Header from './header';
@@ -81,7 +80,7 @@ const BaseLayout: FC<LayoutProps> = ({ children, components }) => {
 
 const isHomePage = () => useNode().node.pagePath === '/';
 
-const Layout$ = designable({
+const Layout = designable({
   Breadcrumbs: flowHoc(
     withNodeKey({ nodeKey: 'MainMenu', nodeCollection: 'site' }),
     addClasses('pt-2'),
@@ -89,7 +88,5 @@ const Layout$ = designable({
     flowIf(isHomePage)(replaceWith(React.Fragment)),
   )(BreadcrumbsBase),
 })(BaseLayout);
-
-const Layout = withSearchResult(Layout$);
 
 export default Layout;

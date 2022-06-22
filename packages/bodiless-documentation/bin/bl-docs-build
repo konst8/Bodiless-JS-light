@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-const requireEsm = require('esm')(module);
-
-const blDocsBuild = requireEsm('../lib/blDocsBuild.js');
-blDocsBuild.default();
