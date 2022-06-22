@@ -13,7 +13,7 @@
  */
 import { flowHoc, addProps } from '@bodiless/fclasses';
 import { withNodeKey } from '@bodiless/core';
-import { getSnapFrom, withTailwindClasses } from '@bodiless/layouts';
+import { getSnapFrom } from '@bodiless/layouts';
 import { FlowContainer } from '@bodiless/layouts-ui';
 import withProductVariations from './withProductVariations';
 import { asFilterableProductContainer } from '../ProductCard/token';
