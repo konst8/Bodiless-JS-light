@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "@bodiless/cli": "^1.0.0-rc.9",
-    "babel-plugin-preval": "5.0.0",
     "lodash": "^4.17.19",
     "uuid": "^3.3.2"
   },
