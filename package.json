@@ -37,7 +37,6 @@
     "lerna:publish": "lerna publish from-git --yes --dist-tag latest",
     "lerna:canary": "lerna publish --canary --include-merged-tags --preid ks-canary --dist-tag ks-canary --force-publish",
     "pw:run": "npx playwright test playwright/tests/smoke/* --project=chromium --workers 1",
-    "psh:setup-starter": "node ./scripts/psh-setup-starter",
     "serve": "lerna run serve --scope @sites/${APP_SITE_NAME:-test-site} --stream",
     "setup": "npm run bootstrap && npm run build:packages",
     "setup:gatsby-cloud": "npm run bootstrap:gatsby-cloud && npm run build:packages",
