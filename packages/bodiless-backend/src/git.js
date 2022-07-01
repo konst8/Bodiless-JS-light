@@ -112,50 +112,6 @@ const uncommitted = async () => {
 };
 
 /**
- * Returns an object describing local and upstream changes on the changeset branch.
- *
- * @return {object} changes between branches.
- *            {
- *              upstream,   // Commits from upstream branch.
- *              production, // Commits from origin/main.
- *              local,      // Commits made on local branch.
- *            }
- */
-const getChanges = async () => {
-  try {
-    await GitCmd.cmd().add('fetch', 'origin').exec();
-    const branch = await getCurrentBranch();
-    const upstreamBranch = await getUpstreamBranch(branch);
-    const productionBranch = 'origin/main';
-    if (!upstreamBranch) {
-      return {
-        upstream: { branch: null, commits: [], files: [] },
-        production: { branch: productionBranch, commits: [], files: [] },
-        local: { branch, commits: [], files: [] },
-      };
-    }
-    const result = await Promise.all([
-      compare(upstreamBranch, branch),
-      compare(productionBranch, upstreamBranch),
-      compare(branch, productionBranch),
-      uncommitted(),
-    ]);
-    const status = {
-      upstream: { branch: upstreamBranch, ...result[0] },
-      production: { branch: productionBranch, ...result[1] },
-      local: {
-        branch,
-        commits: [...result[2].commits],
-        files: [...result[2].files, ...result[3].files],
-      },
-    };
-    return status;
-  } catch (e) {
-    throw new Error(`Error occurred: ${e.message}`);
-  }
-};
-
-/**
  * Clone a repo with url and branch to checkout.
  *
  * @param {string} url - Repo url.
@@ -375,7 +331,6 @@ module.exports = {
   getCurrentBranch,
   getUpstreamBranch,
   getUpstreamTrackingBranch,
-  getChanges,
   getConflicts,
   getMergeBase,
   compare,

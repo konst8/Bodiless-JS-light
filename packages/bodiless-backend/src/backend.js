@@ -23,7 +23,7 @@ const path = require('path');
 const uniq = require('lodash/uniq');
 const Page = require('./page');
 const GitCmd = require('./GitCmd');
-const { getChanges, getConflicts, mergeMain } = require('./git');
+const { getConflicts, mergeMain } = require('./git');
 const { copyAllFiles, copyFile, moveFile } = require('./fileHelper');
 const Logger = require('./logger');
 
@@ -268,7 +268,6 @@ class Backend {
       res.header('Content-Type', 'application/json');
       next();
     });
-    this.setRoute(`${backendPrefix}/changes`, Backend.getChanges);
     this.setRoute(`${backendPrefix}/changes/conflicts`, Backend.getConflicts);
     this.setRoute(`${backendPrefix}/get/commits`, Backend.getLatestCommits);
     this.setRoute(`${backendPrefix}/change/amend`, Backend.setChangeAmend);
@@ -336,19 +335,6 @@ class Backend {
       return false;
     }
     return true;
-  }
-
-  static getChanges(route) {
-    route.get(async (req, res) => {
-      try {
-        const status = await getChanges();
-        res.send(status);
-      } catch (error) {
-        logger.log(error);
-        error.code = 500;
-        Backend.exitWithErrorResponse(error, res);
-      }
-    });
   }
 
   static getConflicts(route) {

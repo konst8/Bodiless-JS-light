@@ -24,7 +24,6 @@ import { getUI } from '../components';
 import { useEditContext, useGetter } from '../hooks';
 import { BodilessBackendClient } from '../BackendClient';
 import CommitsList from './CommitsList';
-import RemoteChanges from './RemoteChanges';
 import Reset from './Reset';
 import SaveChanges from './SaveChanges';
 import { GitClient } from './types';
@@ -91,7 +90,6 @@ const formGitPull = (client: GitClient, notifyOfChanges: ChangeNotifier) => cont
       <ComponentFormText type="hidden" field="keepOpen" initialValue={false} />
       <ComponentFormText type="hidden" field="mergeMain" initialValue={false} />
       <ComponentFormText type="hidden" field="refreshWhenDone" initialValue={false} />
-      <RemoteChanges client={client} notifyOfChanges={notifyOfChanges} ui={ui} />
     </>
   );
 });

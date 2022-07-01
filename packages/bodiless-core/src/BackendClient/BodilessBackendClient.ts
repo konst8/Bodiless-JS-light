@@ -171,10 +171,6 @@ export class BodilessBackendClient implements BodilessStoreBackend {
     return this.get(`${this.prefix}/set/list`);
   }
 
-  getChanges() {
-    return this.get(`${this.prefix}/changes`);
-  }
-
   getConflicts(target?: string) {
     const $param = target ? `?target=${target}` : '';
     return this.get(`${this.prefix}/changes/conflicts${$param}`);

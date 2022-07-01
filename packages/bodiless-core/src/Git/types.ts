@@ -27,7 +27,6 @@ export type GitClient = {
     files: string[],
     author?: string,
   ) => AxiosPromise<any>,
-  getChanges: () => AxiosPromise<any>,
   getConflicts: () => AxiosPromise<ConflictsResponseType>,
   getLatestCommits: () => AxiosPromise<any>,
   pull: () => AxiosPromise<any>,
