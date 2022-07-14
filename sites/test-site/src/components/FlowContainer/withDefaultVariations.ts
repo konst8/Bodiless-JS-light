@@ -22,7 +22,6 @@ import withImageVariations from './withImageVariations';
 import withIframeVariations from './withIframeVariations';
 import withYouTubeVariations from './withYouTubeVariations';
 import withSocialShare from './withSocialShare';
-import withListVariations from './withListVariations';
 import withCarouselVariations from './withCarouselVariations';
 import withCuratorVariations from './withCuratorVariations';
 
@@ -35,7 +34,6 @@ const withDefaultVariations = flowHoc(
   withCardVariations,
   withContentfulCards,
   withSingleAccordionVariations,
-  withListVariations,
   withIframeVariations,
   withSocialShare,
   withYouTubeVariations,
